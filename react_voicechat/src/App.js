@@ -1,11 +1,18 @@
+import React from 'react';
+import {BrowserRouter, Switch, Route} from "react-router-dom";
 
+import Home from "./Components/Home/Home";
+import Navigation from './Components/Navigation/Navigation';
 
 function App() {
   return (
-    <div>
-      <h1>App</h1>
-    </div>
-  );
+    <BrowserRouter>
+      <Navigation />
+      <Switch>
+        <Route path="/" component={Home} />
+      </Switch>
+    </BrowserRouter>
+  )
 }
 
 export default App;
