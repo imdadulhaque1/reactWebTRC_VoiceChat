@@ -1,10 +1,14 @@
-import React from 'react'
+import React from 'react';
+import {Link} from "react-router-dom";
 
+import LogoImdad from '../../../public/images/Imdad.png';
 function Navigation() {
     return (
-        <div>
-            <h1>This is Navigation Bar!</h1>
-        </div>
+        <nav>
+            <Link to="/">
+                <img src={LogoImdad} alt="Imdadul" />
+            </Link>
+        </nav>
     )
 }
 
