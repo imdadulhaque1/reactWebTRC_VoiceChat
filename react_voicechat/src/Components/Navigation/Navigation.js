@@ -1,12 +1,26 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import styles from './Navigation.module.css';
 
-import LogoImdad from '../../../public/images/Imdad.png';
+import LogoImdad from '../../assets/images/Imdad.png';
+
 function Navigation() {
+
+    const brandStyle = {
+        color: '#fff',
+        textDecoration: 'none',
+        fontWeight: 'bold',
+        display: 'flex',
+        alignItems: 'center',
+    }
+    const logoText = {
+        marginLeft: '10px',
+    }
     return (
-        <nav>
-            <Link to="/">
-                <img src={LogoImdad} alt="Imdadul" />
+        <nav className={`${styles.navbar} container`}>
+            <Link style={brandStyle} to="/">
+                <img src={LogoImdad} alt="Imdadul" height={20} width={50} />
+                <span style={logoText}>Imdadul Haque</span>
             </Link>
         </nav>
     )
