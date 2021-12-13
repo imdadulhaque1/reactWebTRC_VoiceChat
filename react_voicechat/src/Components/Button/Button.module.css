@@ -1,0 +1,22 @@
+.HomeBtn{
+    background-color: #0077ff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.HomeBtn:hover{
+    background: #092d44;
+}
+
+.BtnArraw{
+    margin-left: 10px;
+}
