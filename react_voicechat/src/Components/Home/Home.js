@@ -1,12 +1,12 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
 import styles from './Home.module.css';
-import LogoImdad from '../../assets/images/Imdad.png';
-import backImg from '../../assets/images/back.png';
+import Card from '../Card/Card';
 function Home() {
     return (
         <div className={styles.cardWrapper}>
-            <div className={styles.card}>
+            <Card title="Welcome to chatting room!!!" icon="Imdad"></Card>
+            {/* <div className={styles.card}>
                 <div className={styles.headingWrapper}>
                     <img src={LogoImdad} height={40} width={70} alt="Imdadul Haque"/>
                     <h2 className={styles.heading}>Welcome to chatting room!</h2>
@@ -25,7 +25,7 @@ function Home() {
                     <Link to='/login'>Sign in</Link>
                 </div>
 
-            </div>
+            </div> */}
         </div>
         
     )
